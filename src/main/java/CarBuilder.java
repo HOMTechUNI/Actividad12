@@ -2,7 +2,7 @@ public class CarBuilder implements Builder{
 
     private Car car;
 
-    public void CardBuilder(){
+    public CarBuilder(){
         this.reset();
     }
 
@@ -29,5 +29,9 @@ public class CarBuilder implements Builder{
     @Override
     public void setGPS(Boolean bool) {
         this.car.haveGPS = bool;
+    }
+
+    public Car getResult(){
+        return this.car;
     }
 }

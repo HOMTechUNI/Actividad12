@@ -2,7 +2,7 @@ public class ManualBuilder implements Builder{
 
     private Manual manual;
 
-    public void ManualBuilder(){
+    public ManualBuilder(){
         this.reset();
     }
 
@@ -29,5 +29,9 @@ public class ManualBuilder implements Builder{
     @Override
     public void setGPS(Boolean bool) {
         this.manual.haveGPS = bool;
+    }
+
+    public Manual getResult(){
+        return this.manual;
     }
 }
