@@ -17,8 +17,8 @@ public class ManualBuilder implements Builder{
     }
 
     @Override
-    public void setEngine() {
-
+    public void setEngine(Engine engine) {
+        this.manual.engine=engine.GetTypeEngine();
     }
 
     @Override

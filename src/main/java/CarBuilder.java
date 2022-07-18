@@ -17,8 +17,8 @@ public class CarBuilder implements Builder{
     }
 
     @Override
-    public void setEngine() {
-
+    public void setEngine(Engine engine) {
+        this.car.engine=engine.GetTypeEngine();
     }
 
     @Override

@@ -8,7 +8,7 @@ public class Director {
     public void makeSUV(Builder builder){
         builder.reset();
         builder.setSeats(4);
-        builder.setEngine();
+        builder.setEngine(new SUVEngine());
         builder.setTripComputer(true);
         builder.setGPS(true);
     }
@@ -16,7 +16,7 @@ public class Director {
     public void makeSport(Builder builder){
         builder.reset();
         builder.setSeats(2);
-        builder.setEngine();
+        builder.setEngine(new SportEngine());
         builder.setTripComputer(true);
         builder.setGPS(true);
     }

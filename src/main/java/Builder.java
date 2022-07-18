@@ -3,9 +3,10 @@ public interface Builder {
 
     void setSeats(int seats);
 
-    void setEngine();
+    void setEngine(Engine engine);
 
     void setTripComputer(Boolean bool);
 
     void setGPS(Boolean bool);
+
 }
