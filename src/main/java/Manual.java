@@ -8,21 +8,22 @@ public class Manual {
 
     String engine;
 
-    public Manual(){
+    public Manual() {
         numSeats = 0;
         haveComputer = false;
         haveGPS = false;
-        engine="";
+        engine = "";
     }
+
     @Override
-    public String toString(){
-        String Computer=((haveComputer)?"si":"no");
-        String GPS=((haveGPS)?"si":"no");
+    public String toString() {
+        String Computer = ((haveComputer) ? "si" : "no");
+        String GPS = ((haveGPS) ? "si" : "no");
         return "el manual tiene las instrucciones para un auto con las siguientes características :" +
-                "\n-"+numSeats+" asientos" +
-                "\n-"+Computer+" tiene computador" +
-                "\n-"+GPS+" tiene gps" +
-                "\n-motor de tipo "+engine;
+                "\n-" + numSeats + " asientos" +
+                "\n-" + Computer + " tiene computador" +
+                "\n-" + GPS + " tiene gps" +
+                "\n-motor de tipo " + engine;
     }
 
 }

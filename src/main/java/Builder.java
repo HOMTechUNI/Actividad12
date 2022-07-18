@@ -8,5 +8,4 @@ public interface Builder {
     void setTripComputer(Boolean bool);
 
     void setGPS(Boolean bool);
-
 }

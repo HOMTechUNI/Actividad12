@@ -1,13 +1,13 @@
-public class CarBuilder implements Builder{
+public class CarBuilder implements Builder {
 
     private Car car;
 
-    public CarBuilder(){
+    public CarBuilder() {
         this.reset();
     }
 
     @Override
-    public void reset(){
+    public void reset() {
         this.car = new Car();
     }
 
@@ -18,7 +18,7 @@ public class CarBuilder implements Builder{
 
     @Override
     public void setEngine(Engine engine) {
-        this.car.engine=engine.GetTypeEngine();
+        this.car.engine = engine.GetTypeEngine();
     }
 
     @Override
@@ -31,7 +31,7 @@ public class CarBuilder implements Builder{
         this.car.haveGPS = bool;
     }
 
-    public Car getResult(){
+    public Car getResult() {
         return this.car;
     }
 }

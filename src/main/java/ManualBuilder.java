@@ -1,8 +1,8 @@
-public class ManualBuilder implements Builder{
+public class ManualBuilder implements Builder {
 
     private Manual manual;
 
-    public ManualBuilder(){
+    public ManualBuilder() {
         this.reset();
     }
 
@@ -18,7 +18,7 @@ public class ManualBuilder implements Builder{
 
     @Override
     public void setEngine(Engine engine) {
-        this.manual.engine=engine.GetTypeEngine();
+        this.manual.engine = engine.GetTypeEngine();
     }
 
     @Override
@@ -31,7 +31,7 @@ public class ManualBuilder implements Builder{
         this.manual.haveGPS = bool;
     }
 
-    public Manual getResult(){
+    public Manual getResult() {
         return this.manual;
     }
 }
